@@ -18,9 +18,9 @@ jobs:
           password: ${{ secrets.HUB_PASSWORD }}
       - name: Laravel Authentication Image Build
         run: |
-          docker build -t mohamedtorkey15/laravel-auth
+          docker build -t mohamedtorkey15/laravel-authentication .
       - name: Laravel Authentication Image Push
         run: |
-          docker push mohamedtorkey15/laravel-auth
+          docker push mohamedtorkey15/laravel-authentication
           
 
